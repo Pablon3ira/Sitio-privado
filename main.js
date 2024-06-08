@@ -34,5 +34,5 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
     }
 });
 
-window.alert("Failed access");
-    alert("Acceso denegado!");
+//window.alert("Failed access");
+  //  alert("Acceso denegado!");
