@@ -1,20 +1,26 @@
+
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display:flex;
+    justify-content:end;
+    align-items:normal;
     height: 100vh;
     margin: 0;
-    background-color: #757373;
+    background-image: url(https://i.blogs.es/669147/ram-s6-key--rt-1920x1080/1366_2000.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .login-container {
-    background-color: #a79b9b4b;
-    justify-content:flex-end;
-    padding: 30px;
+    background-color: #ffffffe5;
+  /*  display: inline;*/
+    
+    padding: 80px;
     box-shadow: 0 0 10px #0000001a;
-    border-radius: 5px;
+    border-radius: 2rem;
     width: 300px;
+    min-width: 5px;
     text-align: center;
 }
 
@@ -47,7 +53,7 @@ body {
 }
 
 .login-container button:hover {
-    background-color: #59b819;
+    background-color: #65fd00;
 }
 
 #errorMsg {

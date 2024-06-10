@@ -1,5 +1,5 @@
 // Definimos los datos correctos de acceso
-const correctUsername = "admin";
+const correctUsername = "admin@admin";
 const correctPassword = "password123";
 
 // Función para verificar los datos de acceso
@@ -19,20 +19,13 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
     if (verifyLogin(username, password)) {
         alert("Acceso permitido!");
         // Redirigir o realizar alguna acción adicional aquí
+        //insertar codigo que navegue HREF JS
+        
     } else {
         document.getElementById('errorMsg').innerText = "Invalid username or password.";
-        
-    }
-    
-});
-document.getElementById('loginForm').addEventListener('submit', function (event) {
-    var termsCheckbox = document.getElementById('terms');
 
-    if (!termsCheckbox.checked) {
-        alert('Debes aceptar los términos y condiciones para continuar.');
-        event.preventDefault(); // Evita el envío del formulario
     }
+
 });
 
-//window.alert("Failed access");
-  //  alert("Acceso denegado!");
+

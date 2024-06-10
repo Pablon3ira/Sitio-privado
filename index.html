@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Rick Login </title>
+    <link rel="stylesheet" href="estilos/styles.css">
+    
 </head>
 
 <body>
+    
     <div class="login-container">
-        <h2></h2>
-        <form id="loginForm">
+        <h2>Hola Morty</h2>
+        <form id="loginForm" action="" method="get">
             <label for="username">Usuario:</label>
-            <input type="text" id="username" name="username" required>
+            <input type="email" id="username" name="username" required>
 
             <label for="password">Contraseña:</label>
             <input type="password" id="password" name="password" required>
@@ -22,11 +24,11 @@
                 <label><input type="checkbox" id="checkbox1" value="first_checkbox" />Acepto las <a
                         href="condiciones.html" class="condic" >Condiciones</a></label>
             </div>
-            <button type="submit">Login</button>
+            <button type="submit">Login</a></button>
         </form>
         <p id="errorMsg"></p>
     </div>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
