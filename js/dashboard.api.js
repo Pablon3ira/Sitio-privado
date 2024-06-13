@@ -1,5 +1,5 @@
 function GetCharacters(done) {
-    const results = fetch("https://rickandmortyapi.com/api/character/?page=19");
+    const results = fetch("https://rickandmortyapi.com/api/character/?page=19https://rickandmortyapi.com/api/character/?name=rick&status=alive");
 
     results
         .then(response => response.json())
@@ -25,7 +25,6 @@ GetCharacters(data => (
         main.append(article);
 
     })
-     
-    
-    ));
-    
+
+
+));

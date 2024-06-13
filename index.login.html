@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick Login </title>
     <link rel="stylesheet" href="estilos/styles.css">
-    
 </head>
 
 <body>
-    
+
     <div class="login-container">
         <h2>Hola Morty</h2>
-        <form id="loginForm" action="" method="get">
+        <form id="loginForm" action="auth.html" method="get">
             <label for="username">Usuario:</label>
             <input type="email" id="username" name="username" required>
 
@@ -21,14 +20,13 @@
             <input type="password" id="password" name="password" required>
 
             <div class="checkbox">
-                <label><input type="checkbox" id="checkbox1" value="first_checkbox" />Acepto las <a
-                        href="condiciones.html" class="condic" >Condiciones</a></label>
+                <label><input type="checkbox" id="condic" value="first_checkbox" required />Acepto las <a
+                        href="condiciones.html" class="conditions">Condiciones</a></label>
             </div>
             <button type="submit">Login</a></button>
         </form>
         <p id="errorMsg"></p>
     </div>
-    <script src="js/main.js"></script>
 </body>
 
 </html>
