@@ -14,6 +14,6 @@ if (username == 'admin@1' && password == '123') {
 
 else {
     alert ('Usuario incorrecto')
-    window.location.href = 'index.login.html'
+    window.location.href = 'index.html'
     console.log(username)
 }
