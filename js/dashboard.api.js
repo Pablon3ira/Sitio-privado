@@ -18,6 +18,10 @@ GetCharacters(data => (
       </div>
       <h2>${personaje.name}</h2>
       <span>${personaje.status}</span>
+      <p>${personaje.type}</p>
+      <p>${personaje.id}</p>
+      <p>${personaje.gender}</p>
+      <span>${personaje.species}</span>
       </article>
  `);
 

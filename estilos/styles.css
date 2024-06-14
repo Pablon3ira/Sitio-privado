@@ -10,10 +10,11 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    color:white
 }
 
 .login-container {
-    background-color: #348a2296;
+    background-color: #0b0b0b96;
     padding: 80px;
     box-shadow: 0 0 10px #75e21c;
     border-radius: 2rem;

@@ -5,24 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="estilos/home.css">
+    <link rel="stylesheet" href="estilos/dashboard.css">
     <link rel="stylesheet" href="estilos/nav.css">
     
 </head>
 <header>
-    <nav class="navbar">
-        
-        <div class="hamburger" id="hamburger">
-            &#9776;
-        </div>
-        <div class="logo"><i>By: Pablo</i></div>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
+   <!-- El contenedor del menú hamburguesa -->
+<div class="menu-hamburguesa">
+    <!-- El botón para abrir y cerrar el menú -->
+    <button class="menu-hamburguesa-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <!-- El contenedor del menú -->
+    <div class="menu-hamburguesa-container">
+      <!-- Los items del menú -->
+      <ul>
+        <!-- Categorías de la API de Rick y Morty -->
+        <li><a href="#" data-category="character">Personajes</a></li>
+        <li><a href="#" data-category="location">Lugares</a></li>
+        <li><a href="#" data-category="episode">Episodios</a></li>
+        <!-- Otras opciones -->
+        <li><a href="#" data-category="status">Estado</a></li>
+        <li><a href="#" data-category="species">Especies</a></li>
+        <li><a href="#" data-category="gender">Género</a></li>
+      </ul>
+    </div>
+  </div>
 </header>
 
 <body>
@@ -30,6 +40,7 @@
         <h1>Characters</h1>
         <main></main>
         <script src="js/dashboard.api.js"></script>
+        <script src="js/hamburger.js"></script>
 </body>
 
 </html>
