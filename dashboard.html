@@ -2,18 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="estilos/dashboard.css">
-    <link rel="stylesheet" href="estilos/nav.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="estilos/dashboard.css">
+  <link rel="stylesheet" href="estilos/nav.css">
+
 </head>
 <header>
-   <!-- El contenedor del menú hamburguesa -->
-<div class="menu-hamburguesa">
+  <!-- El contenedor del menú hamburguesa -->
+  <div class="menu-hamburguesa">
     <!-- El botón para abrir y cerrar el menú -->
     <button class="menu-hamburguesa-btn">
+      <span></span>
       <span></span>
       <span></span>
       <span></span>
@@ -22,25 +23,38 @@
     <div class="menu-hamburguesa-container">
       <!-- Los items del menú -->
       <ul>
-        <!-- Categorías de la API de Rick y Morty -->
-        <li><a href="#" data-category="character">Personajes</a></li>
-        <li><a href="#" data-category="location">Lugares</a></li>
-        <li><a href="#" data-category="episode">Episodios</a></li>
+      <!--Volver al login-->
+        <li><a href="index.html">Login</a></li>
         <!-- Otras opciones -->
-        <li><a href="#" data-category="status">Estado</a></li>
-        <li><a href="#" data-category="species">Especies</a></li>
-        <li><a href="#" data-category="gender">Género</a></li>
-      </ul>
+        <select id="genderFilter">
+          <option value="">All Genders</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Genderless">Genderless</option>
+          <option value="unknown">Unknown</option>
+      </select>
+      
+      <select id="speciesFilter">
+          <option value="">All Species</option>
+          <option value="Human">Human</option>
+          <option value="Alien">Alien</option>
+          <option value="Robot">Robot</option>
+          <option value="Animal">Animal</option>
+          <option value="Mythological Creature">Mythological Creature</option>
+          <option value="Humanoid">Humanoid</option>
+          <option value="unknown">Unknown</option>
+      </select>
+      
+      <button id="filterButton">Filter</button>
     </div>
   </div>
 </header>
 
 <body>
-    <div>
-        <h1>Characters</h1>
-        <main></main>
-        <script src="js/dashboard.api.js"></script>
-        <script src="js/hamburger.js"></script>
+  <div>
+    <h1>Characters</h1>
+    <main></main>
+    <script src="js/dashboard.api.js"></script>
 </body>
 
 </html>
